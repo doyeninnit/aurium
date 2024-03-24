@@ -1,0 +1,1 @@
+{"canister_methods":{"queries":[{"name":"getProducts","composite":false},{"name":"getShopDetails","composite":false},{"name":"getAllShops","composite":false}],"updates":[{"name":"registerShop"},{"name":"addProductToShop"}],"callbacks":{}},"env_vars":[]}

@@ -1,0 +1,7 @@
+service: () -> {
+    addProductToShop: (text, record {inStock:bool; name:text; description:text; productId:text; price:text}) -> (text);
+    getAllShops: () -> (vec record {shopId:text; owner:principal; name:text; description:text; products:vec record {inStock:bool; name:text; description:text; productId:text; price:text}}) query;
+    getProducts: (text) -> (opt vec record {inStock:bool; name:text; description:text; productId:text; price:text}) query;
+    getShopDetails: (text) -> (opt record {shopId:text; owner:principal; name:text; description:text; products:vec record {inStock:bool; name:text; description:text; productId:text; price:text}}) query;
+    registerShop: (principal, text, text, text) -> (text);
+}
